@@ -4,3 +4,11 @@ coverage/
 dist/
 *.log
 .env.local
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Vercel local configuration
+.vercel/

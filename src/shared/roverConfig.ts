@@ -18,4 +18,4 @@ export const ROVER_CONFIG = {
     "Frontend map uses centimetres, pose reference at front-centre, heading 0 faces +Y, positive rotation is counter-clockwise. Future ROS/Gazebo adapters must transform explicitly."
 } as const;
 
-export const STUB_NOTICE = "STUB MODE - TEST DATA, NOT PHYSICS SIMULATION";
+export const STUB_NOTICE = "STUB MODE - TEST DATA";
