@@ -1,7 +1,9 @@
 import { createServer } from "node:http";
 import { createBackend } from "./app";
 
-const port = Number(process.env.CADE_BACKEND_PORT ?? 4000);
+const port = Number(
+  process.env.PORT ?? process.env.CADE_BACKEND_PORT ?? 4000
+);
 const backend = createBackend();
 const server = createServer(backend.app);
 backend.attachWebSocket(server);
